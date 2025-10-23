@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Kwekwe Polytechnic</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+     <a href="index.html"><img src="images/kwekwe-logo.png" alt="Kwekwe Polytechnic logo" class="logo"/></a>
+   
+      <h1 class="site-title">Kwekwe Polytechnic</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> 1 Railway Ave</p>
+    <p><strong>Telephone:</strong> +263 55 25 2299+3</p>
+    <p><strong>Email:</strong> <a href="mailto:infor@kwekwepoly.ac.zw">infor@kwekwepoly.ac.zw</a></p>
+
+    <h3>Message us</h3>
+    <form action="mailto:infor@kwekwepoly.ac.zw" method="post" enctype="text/plain">
+      <label>Name<br><input type="text" name="name" required></label><br>
+      <label>Email<br><input type="email" name="email" required></label><br>
+      <label>Message<br><textarea name="message" rows="6" required></textarea></label><br>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year3"></span> Kwekwe Polytechnic.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>
